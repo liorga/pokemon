@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <h1>Pokemon Site</h1>
+    <p>this site is for the pokemon lovers!</p>
+    <button href="/pokemons">view all pokemons</button>
+    <div style="padding: 10px">
+        <label>top pokemons</label>
+    </div>
+    <div>
+        <img />
+        <label id="top_pokemon1">pokemon 1</label>
+    </div>
+    <div>
+        <img />
+        <label id="top_pokemon2">pokemon 2</label>
+    </div>
+    <div>
+        <img />
+        <label id="top_pokemon3">pokemon 3</label>
+    </div>
+    <script>
+        fetch('/api/top3').then(res => {
+            res.json().then(data => {
+                console.log(data);
+            });
+        });
+    </script>
+</body>
+
+</html>
