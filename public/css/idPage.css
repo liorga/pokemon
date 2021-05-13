@@ -1,0 +1,16 @@
+body {
+    background-color: chocolate;
+}
+
+label {
+    text-align: center;
+    margin-left: 100px;
+}
+
+img {
+    max-width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

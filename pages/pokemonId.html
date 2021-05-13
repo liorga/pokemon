@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/idPage.css" />
     <title>Pokemon Id</title>
 </head>
 
@@ -11,14 +12,18 @@
     <img src="" alt="" id="pokeImg">
     <label id="pokName"></label>
     <label id="pokType"></label>
-    <label id="pokeBase"></label>
-
-
+    <label id="pokeBaseAttack"></label>
+    <label id="pokeBaseDefense"></label>
+    <label id="pokeBaseHp"></label>
     <script>
         const path = window.location.pathname;
         fetch('/api' + path).then(res => res.json()).then(data => {
-            console.log(data);
-            document.getElementById('pokeBase').innerText = data.base.HP;
+            //console.log(data);
+            let Base = Object.values(data.base);
+            console.log(Base);
+            document.getElementById('pokeBaseAttack').innerText = Base;
+            document.getElementById('pokeBaseDefense').innerText = Base.Defense;
+            //document.getElementById('pokeBase').innerText = Base.HP;
             document.getElementById('pokName').innerText = data.name;
             document.getElementById('pokType').innerHTML = data.type;
             document.getElementById('pokeImg').src = data.img;
