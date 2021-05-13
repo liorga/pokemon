@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/viewPage.css" />
     <title>View All Pokemons</title>
 </head>
 
 <body>
-    <h1>Hi you Biatttch</h1>
+
     <div id="pokeList">
 
     </div>
@@ -22,6 +23,8 @@
         });
 
         function appendData(data) {
+
+            //var scrolBar = document.createElement()
             var mainContainer = document.getElementById("pokeList");
             for (var i = 0; i < data.length; i++) {
                 var div = document.createElement("div");

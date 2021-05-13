@@ -10,10 +10,11 @@ for (const pokemon of data) {
     pokemon.img = `/images/${strId}.png`;
     pokemon.counter = 0;
 }
-
-
+//
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+
 
 const PORT = process.env.PORT || 3000;
 
@@ -25,6 +26,9 @@ app.get('/pokemons/:id', (req, res) => {
 })
 
 app.get('/api/getAll', (req, res) => {
+    data.sort((a, b) => {
+        return a.id - b.id;
+    });
     res.send(data);
 })
 

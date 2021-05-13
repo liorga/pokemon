@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/mainPage.css" />
     <title>Pokemon</title>
 </head>
 
@@ -15,21 +17,27 @@
         <label>top pokemons</label>
     </div>
     <div>
-        <img />
+        <img id="no1" />
         <label id="top_pokemon1">pokemon 1</label>
     </div>
     <div>
-        <img />
+        <img id="no2" />
         <label id="top_pokemon2">pokemon 2</label>
     </div>
     <div>
-        <img />
+        <img id="no3" />
         <label id="top_pokemon3">pokemon 3</label>
     </div>
     <script>
         fetch('/api/top3').then(res => {
             res.json().then(data => {
                 console.log(data);
+                document.getElementById('top_pokemon1').innerHTML = data[0].name;
+                document.getElementById('no1').src = data[0].img;
+                document.getElementById('top_pokemon2').innerHTML = data[1].name;
+                document.getElementById('no2').src = data[1].img;
+                document.getElementById('top_pokemon3').innerHTML = data[2].name;
+                document.getElementById('no3').src = data[2].img;
             });
         });
         document.getElementById('viewButton').onclick = function() {

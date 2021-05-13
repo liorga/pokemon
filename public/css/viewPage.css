@@ -1,0 +1,13 @@
+body {
+    background-color: chocolate;
+}
+
+img {
+    max-width: 10%;
+    height: auto;
+}
+
+div {
+    margin: auto;
+    padding: auto;
+}
