@@ -10,7 +10,7 @@
 <body>
     <h1>Pokemon Site</h1>
     <p>this site is for the pokemon lovers!</p>
-    <button href="/pokemons">view all pokemons</button>
+    <button id="viewButton">view all pokemons</button>
     <div style="padding: 10px">
         <label>top pokemons</label>
     </div>
@@ -32,6 +32,10 @@
                 console.log(data);
             });
         });
+        document.getElementById('viewButton').onclick = function() {
+                location.href = '/viewAll';
+            }
+            ///
     </script>
 </body>
 

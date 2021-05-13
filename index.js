@@ -24,6 +24,14 @@ app.get('/pokemons/:id', (req, res) => {
     res.sendFile(path.resolve('./pages/pokemonId.html'));
 })
 
+app.get('/api/getAll', (req, res) => {
+    res.send(data);
+})
+
+app.get('/viewAll', (req, res) => {
+    res.sendFile(path.resolve('./pages/viewAll.html'));
+});
+
 app.get("/api/pokemons/:id", (req, res) => {
 
     const Id = req.params.id;
@@ -39,6 +47,8 @@ app.get('/api/top3', (req, res) => {
     const top3 = data.slice(0, 3);
     res.send(top3);
 })
+
+//hi
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve('./pages/index.html'));

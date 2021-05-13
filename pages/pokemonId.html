@@ -4,15 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokemon Id</title>
 </head>
 
 <body>
     <img src="" alt="" id="pokeImg">
+    <label id="pokName"></label>
+    <label id="pokType"></label>
+    <label id="pokeBase"></label>
+
+
     <script>
         const path = window.location.pathname;
         fetch('/api' + path).then(res => res.json()).then(data => {
             console.log(data);
+            document.getElementById('pokeBase').innerText = data.base.HP;
+            document.getElementById('pokName').innerText = data.name;
+            document.getElementById('pokType').innerHTML = data.type;
             document.getElementById('pokeImg').src = data.img;
         });
     </script>
