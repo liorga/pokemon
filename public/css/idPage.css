@@ -1,16 +1,21 @@
 body {
-    background-color: chocolate;
-}
-
-label {
-    text-align: center;
-    margin-left: 100px;
+    background-color: rgb(93, 12, 124);
+    ;
 }
 
 img {
-    max-width: 40%;
-    display: block;
+    max-width: 25%;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+label {
+    display: block;
+    color: cornsilk;
+    text-align: left;
+    border: 2px solid rgb(61, 190, 223);
+    max-width: 120px;
+    padding: 5px;
 }

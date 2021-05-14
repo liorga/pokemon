@@ -1,5 +1,5 @@
 body {
-    background-color: chocolate;
+    background-color: rgb(93, 12, 124);
 }
 
 img {
@@ -8,7 +8,8 @@ img {
 }
 
 div {
-    border: 1px solid rgb(1, 18, 179);
-    margin: auto;
+    color: cornsilk;
+    border: 2px solid rgb(61, 190, 223);
+    margin: 20px;
     padding: 5px;
 }

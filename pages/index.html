@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <h1>Pokemon Site</h1>
     <p>this site is for the pokemon lovers!</p>
     <button id="viewButton">view all pokemons</button>
@@ -28,23 +29,7 @@
         <img id="no3" />
         <label id="top_pokemon3">pokemon 3</label>
     </div>
-    <script>
-        fetch('/api/top3').then(res => {
-            res.json().then(data => {
-                console.log(data);
-                document.getElementById('top_pokemon1').innerHTML = data[0].name;
-                document.getElementById('no1').src = data[0].img;
-                document.getElementById('top_pokemon2').innerHTML = data[1].name;
-                document.getElementById('no2').src = data[1].img;
-                document.getElementById('top_pokemon3').innerHTML = data[2].name;
-                document.getElementById('no3').src = data[2].img;
-            });
-        });
-        document.getElementById('viewButton').onclick = function() {
-                location.href = '/viewAll';
-            }
-            ///
-    </script>
+    <script src="/js/mainPage.js"></script>
 </body>
 
 </html>
