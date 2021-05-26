@@ -16,4 +16,6 @@ p{
 
 img{
     color: aliceblue;
+    max-width: 20%;
+    height: auto;
 }
