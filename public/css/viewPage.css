@@ -1,15 +1,19 @@
 body {
-    background-color: rgb(93, 12, 124);
+    background-image: url("./background.jpg");
+    background-repeat: repeat;
 }
 
 img {
-    max-width: 10%;
+    max-width: 20%;
     height: auto;
 }
 
-div {
-    color: cornsilk;
-    border: 2px solid rgb(61, 190, 223);
-    margin: 20px;
-    padding: 5px;
-}
+ #pokeList{
+    color: rgb(226, 220, 255);
+    border: 5px solid rgb(61, 190, 223);
+    margin: 50px;
+    padding: 10px;
+    
+    
+    
+} 

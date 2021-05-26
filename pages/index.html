@@ -6,30 +6,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css/mainPage.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Pokemon</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <h1>Pokemon Site</h1>
+            <p>this site is for the pokemon lovers!</p>
+            <button id="viewButton">view all pokemons</button>
+            <div>
+                <label class="text-white" >top 3 pokemons</label>
+            </div>
+        </div>
+    </div>
 
-    <h1>Pokemon Site</h1>
-    <p>this site is for the pokemon lovers!</p>
-    <button id="viewButton">view all pokemons</button>
-    <div style="padding: 10px">
-        <label>top pokemons</label>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-image top-table">
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-white">no.1</th>
+                            <td class="w-25 click">
+                                <img id="no1" class="img-fluid" />
+                                <label id="top_pokemon1" class="text-white">pokemon 1</label>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-white">no.2</th>
+                            <td class="w-25 click">
+                                <img id="no2" class="img-fluid" />
+                                <label id="top_pokemon2" class="text-white">pokemon 2</label>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="text-white">no.3</th>
+                            <td class="w-25">
+                                <img id="no3" class="img-fluid" />
+                                <label id="top_pokemon3" class="text-white" >pokemon 3</label>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-    <div>
-        <img id="no1" />
-        <label id="top_pokemon1">pokemon 1</label>
-    </div>
-    <div>
-        <img id="no2" />
-        <label id="top_pokemon2">pokemon 2</label>
-    </div>
-    <div>
-        <img id="no3" />
-        <label id="top_pokemon3">pokemon 3</label>
-    </div>
-    <script src="/js/mainPage.js"></script>
+
+
+        <script src="/js/mainPage.js"></script>
 </body>
 
 </html>

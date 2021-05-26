@@ -1,9 +1,19 @@
 body {
-    background-color: rgb(93, 12, 124);
-    color: cornsilk;
+    background-image: url("./background.jpg");
+    background-repeat: repeat;
 }
 
-img {
-    max-width: 10%;
-    height: auto;
+
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+p{
+    text-align: center;
+    color: aliceblue;
+}
+
+img{
+    color: aliceblue;
 }

@@ -10,7 +10,7 @@ for (const pokemon of data) {
     pokemon.img = `/images/${strId}.png`;
     pokemon.counter = 0;
 }
-//
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -37,7 +37,6 @@ app.get('/viewAll', (req, res) => {
 });
 
 app.get("/api/pokemons/:id", (req, res) => {
-
     const Id = req.params.id;
     const searchRes = data.find((obj) => obj.id == Id);
     res.send(searchRes);

@@ -1,12 +1,10 @@
-fetch('/api/getAll').then(res => {
-    res.json().then(data => {
-        console.log(data);
-        appendData(data);
-    });
-});
+async function showPokemons() {
+    const data = await fetch('/api/getAll').then(res => res.json());
+    console.log(data);
+    appendData(data);
+}
 
 function appendData(data) {
-
     //var scrolBar = document.createElement()
     var mainContainer = document.getElementById("pokeList");
     for (var i = 0; i < data.length; i++) {
@@ -23,3 +21,4 @@ function appendData(data) {
         mainContainer.appendChild(div);
     }
 }
+showPokemons();

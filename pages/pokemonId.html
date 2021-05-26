@@ -5,25 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/idPage.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Pokemon Id</title>
 </head>
 
 <body>
-    <div id="mainDiv">
-        <div id="imgDiv">
-            <img src="" alt="" id="pokeImg">
-        </div>
+    <div class="container">
 
-        <div id="dataDiv">
-            <label id="pokName"></label>
-            <label id="pokType"></label>
-            <label id="pokeBaseAttack"></label>
-            <label id="pokeBaseDefense"></label>
-            <label id="pokeBaseHp"></label>
-            <label id="pokeBaseSpAttack"></label>
-            <label id="pokeBaseSpDefense"></label>
-            <label id="pokeBaseSpeed"></label>
+        <div class="row text-center">
+            <div class="col-12">
+                <div id="mainDiv">
+                    <div id="imgDiv">
+                        <img src="" alt="" id="pokeImg">
+                    </div>
 
+                    <div id="dataDiv" class="btn btn-basic">
+                        <label id="pokName" class="btn btn-primary"></label>
+                        <label id="pokType" class="btn btn-warning"></label>
+                        <label id="pokeBaseAttack" class="btn btn-success"></label>
+                        <label id="pokeBaseDefense" class="btn btn-danger"></label>
+                        <label id="pokeBaseHp" class="btn btn-info"></label>
+                        <label id="pokeBaseSpAttack" class="btn btn-dark"></label>
+                        <label id="pokeBaseSpDefense" class="btn btn-light"></label>
+                        <label id="pokeBaseSpeed" class="btn btn-secondary"></label>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="/js/pokemonID.js"></script>
